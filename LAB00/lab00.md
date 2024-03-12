@@ -53,10 +53,16 @@
 - Visita [enlace de descarga](enlace).
 - Selecciona la versión "Lite edition" y haz clic en descargar.
 
+![Logo de GitHub](imagenes/Quartus_Descargarpng)
+
+
 ## Cambiar Permisos y Ejecutar el Instalador
 1. Abre la terminal en la carpeta del instalador.
 2. Cambia los permisos del archivo con `chmod +x *.run`.
 3. Ejecuta el instalador con `./nombre_del_archivo.run`.
+
+![Logo de GitHub](imagenes/Instalador.png)
+
 
 ## Instalación
 - Selecciona todas las opciones mostradas en el instalador y haz clic en descargar.
