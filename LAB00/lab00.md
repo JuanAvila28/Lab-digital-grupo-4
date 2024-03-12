@@ -53,7 +53,7 @@
 - Visita [enlace de descarga](enlace).
 - Selecciona la versión "Lite edition" y haz clic en descargar.
 
-![Logo de GitHub](imagenes/Quartus_Descargar.png)
+![Logo de GitHub](imagenes/Quartus_Download.png)
 
 
 ## Cambiar Permisos y Ejecutar el Instalador
