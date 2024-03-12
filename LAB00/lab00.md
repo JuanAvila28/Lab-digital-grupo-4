@@ -69,3 +69,58 @@
    export PATH=$PATH:${ALTERAPATH}/quartus/sopc_builder/bin
    export PATH=$PATH:${ALTERAPATH}/nios2eds/bin
 
+# Tutorial para la herramienta de simulación Questa
+
+## Descargar instalador
+- Descargar los archivos Questa*-Intel® FPGA Edition (includes Starter Edition) del siguiente [link](enlace).
+- Debe descargar tanto el archivo con extensión `.run` como la parte II que tiene extensión `.qdz` en el mismo directorio.
+- Tenga en cuenta que la descarga de estos archivos tomará tiempo.
+- Para el presente tutorial se descargó la versión 23.1.
+
+## Instalación
+- En la terminal de Linux:
+  ```bash
+  chmod +x nombre_archivo.run
+  ./nombre_archivo.run
+
+1. Se abrirá el instalador.
+2. Dar clic en siguiente y seleccionar la opción Questa - Intel FPGA Starter Edition.
+3. Dar clic en siguiente y aceptar los términos y condiciones.
+4. Dar clic en siguiente y seleccionar la carpeta de destino de la instalación.
+5. Dar clic en siguiente y revisar el resumen.
+6. Dar clic en siguiente, con lo cual empezará la instalación.
+
+# Descargar y Configurar la Licencia
+
+1. Ingresar al Self-Service Licensing Center de Intel.
+2. Inscribirse en la opción "Enroll for Intel® FPGA Self Service Licensing Center (SSLC)".
+3. Loguearse en la opción "Already enrolled? - Sign In here (Intel Azure Portal)".
+4. Seguir todos los pasos, uno de ellos consiste en escanear un código QR. En caso de no ser posible, usar la opción "I want to set up a different method", con la cual se enviará un código como mensaje de texto al número de celular que se ingrese.
+5. Leer y aceptar términos de uso.
+6. Una vez realizados los anteriores pasos, se abrirá una pestaña:
+   - Ingresar a la opción "Sign up for Evaluation or No-Cost License".
+   - Seleccionar la opción Questa*-Intel® FPGA Starter (ver imagen) y dar clic en siguiente.
+7. Se abrirá una interfaz para generar la licencia.
+8. Dar clic en +New Computer.
+9. Diligenciar los campos requeridos:
+   - En License type seleccionar FIXED.
+   - En Computer type seleccionar NIC ID.
+   - Para saber el Primary Computer ID:
+     - En una terminal de Linux escribir el comando `ifconfig`.
+     - El NIC ID corresponde al número de la mac del driver de wifi o ethernet, para wifi aparecerá en la opción wlp1s0 junto a la palabra ether.
+     - Copiar todo el string que está separado por dos puntos ":", pero en la casilla Primary Computer ID borrarlos, es decir, sólo dejar caracteres alfanuméricos.
+10. Dar clic en save, aceptar términos de uso y dar clic en generar.
+11. Recibirán un correo con un archivo adjunto con extensión .dat correspondiente a la licencia.
+12. Descargar la licencia en el directorio de instalación.
+
+# Configuración en la IDE de Quartus
+
+1. En el menú Tools abrir el License setup.
+2. En la casilla License file cargar el archivo de la licencia .dat que acaban de generar.
+
+# Configuración de Variables de Entorno de la Licencia
+
+En el archivo .bashrc:
+
+```bash
+export LM_LICENSE_FILE=path_del_archivo/nombre_archivo.dat
