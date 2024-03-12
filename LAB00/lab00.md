@@ -43,3 +43,29 @@
 9. **Reiniciar la Computadora**
    - Una vez que se complete la instalación, reinicia la computadora y retira el medio de instalación.
    - La computadora debería arrancar desde el disco duro y mostrar el sistema operativo recién instalado.
+
+# Instalación de Quartus (para Altera)
+
+## Descarga del Instalador
+- Visita [enlace de descarga](enlace).
+- Selecciona la versión "Lite edition" y haz clic en descargar.
+
+## Cambiar Permisos y Ejecutar el Instalador
+1. Abre la terminal en la carpeta del instalador.
+2. Cambia los permisos del archivo con `chmod +x *.run`.
+3. Ejecuta el instalador con `./nombre_del_archivo.run`.
+
+## Instalación
+- Selecciona todas las opciones mostradas en el instalador y haz clic en descargar.
+- Una vez completada la instalación, encontrarás un acceso directo en el escritorio.
+
+## Configuración de Acceso desde la Terminal
+1. Edita el archivo `.bashrc` ubicado en `/home/usuario`.
+2. Agrega las siguientes líneas al final del archivo:
+   ```bash
+   export ALTERAPATH="/home/usuario/intelFPGA_lite/23.1std/"
+   export QUARTUS_ROOTDIR=${ALTERAPATH}/quartus
+   export QUARTUS_ROOTDIR_OVERRIDE="$QUARTUS_ROOTDIR"
+   export PATH=$PATH:${ALTERAPATH}/quartus/sopc_builder/bin
+   export PATH=$PATH:${ALTERAPATH}/nios2eds/bin
+
