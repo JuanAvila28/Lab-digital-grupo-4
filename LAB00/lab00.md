@@ -7,7 +7,7 @@
 - Conexión a Internet (opcional pero recomendada para actualizaciones durante la instalación)
 - Espacio suficiente en el disco duro para la instalación de Linux minimo 120GB
 
-![linux](imagenes/Instalador.png)
+![linux](imagenes/Part8.png)
 
 
 ## Pasos de Instalación
