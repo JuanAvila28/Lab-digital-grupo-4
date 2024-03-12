@@ -92,12 +92,20 @@
   chmod +x nombre_archivo.run
   ./nombre_archivo.run
 
+![Logo de GitHub](imagenes/1CAP.png)
+
+
 1. Se abrirá el instalador.
 2. Dar clic en siguiente y seleccionar la opción Questa - Intel FPGA Starter Edition.
 3. Dar clic en siguiente y aceptar los términos y condiciones.
 4. Dar clic en siguiente y seleccionar la carpeta de destino de la instalación.
 5. Dar clic en siguiente y revisar el resumen.
 6. Dar clic en siguiente, con lo cual empezará la instalación.
+
+![Logo de GitHub](imagenes/2cap.png)
+![Logo de GitHub](imagenes/questa.jpeg)
+
+
 
 # Descargar y Configurar la Licencia
 
